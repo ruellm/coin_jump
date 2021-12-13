@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Templated client</title>
+
+  
+</head>
+<body>
+  <video autoplay 
+        style="display: none;
+              -moz-transform: scale(-1, 1);
+              -webkit-transform: scale(-1, 1); 
+              -o-transform: scale(-1, 1);
+              transform: scale(-1, 1); 
+              filter: FlipH;  
+  "></video> <!-- hide -->
+
+  <canvas id="game_canvas" style="background:#000000; margin-top: 18px;"></canvas>
+
+
+  <script src="js/lib/handtrack.min.js"> </script>
+
+   <!-- Default references -->
+   <script src="js/common.js"></script>
+   <script src="js/resource.js"></script>
+
+   <!-- Core references -->
+   <script src="js/core/baseObject.js"></script>
+   <script src="js/core/engine.js"></script>
+   <script src="js/core/graphics.js"></script>
+   <script src="js/core/state.js"></script>
+
+   <!-- Utility references -->
+   <script src="js/utility/timer.js"></script>
+   <script src="js/utility/animator.js"></script>
+
+   <!-- scene classes reference -->
+   <script src="js/scene/imageObject.js"></script>
+   <script src="js/scene/animatedObject.js"></script>
+   <script src="js/scene/repeatingImage.js"></script>
+
+   <!-- UI class reference -->
+   <script src="js/ui/uibase.js"></script>
+   <script src="js/ui/uimanager.js"></script>
+   <script src="js/ui/button.js"></script>
+
+   <!-- Game class references -->
+   <script src="js/game/gameData.js"></script>
+   <script src="js/game/animatedImages.js"></script>
+   <script src="js/game/animatedText.js"></script>    
+   <script src="js/game/jumpingItem.js"></script>    
+
+    <!-- state references -->
+    <script src="js/states/loadingState.js"></script>  
+    <script src="js/states/gameState.js"></script>
+
+   <!-- The main page -->
+   <script src="js/main.js"></script>	
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "expresjs_vscode_test",
+  "version": "1.0.0",
+  "description": "vscode IDE test and how to run",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
