@@ -176,6 +176,8 @@ GameState.prototype.Capture = function(context){
         context.restore();
 }
 
+var starDetecting = false;
+
 GameState.prototype.Draw = function (gfx) {
 
         var ctx = gfx._canvasBufferContext;
@@ -197,7 +199,16 @@ GameState.prototype.Draw = function (gfx) {
                         if(predictions[i].label == "face") continue;
                         handBoxList.push(predictions[i].bbox);
                 }
+
+                if(!starDetecting) {
+                    starDetecting = true;
+                }
             });
+        }
+     
+        if(!starDetecting)
+        {
+            return;
         }
 
         if(handBoxList != null){

@@ -53,10 +53,3 @@ const modelParams = {
         iouThreshold: 0.5, // ioU threshold for non-max suppression
         scoreThreshold: 0.6, // confidence threshold for predictions.
 };
-        
-// Load the model.
-handTrack.load(modelParams).then((lmodel) => {
-        // detect objects in the image.
-        g_model = lmodel;
-        console.log(g_model);
-});
